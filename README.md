@@ -10,6 +10,7 @@
 
 
 ##manual_record.py
+
 在打开了carla服务器端并开启其通信功能之后，运行`python3 manual_record.py`可以实现如下功能:
 1.使用XBOX来操作赛车的行动
 2.在操作的同时记录相关数据
@@ -17,8 +18,13 @@
 4.请关注代码的运行提示
 
 ##testfunction中的代码
+
 `plotoriginal.py`中提供了分析 保存steer，gas，brake分布情况的代码。
 `plot`用于与`plotoriginal.py`配合（利用pk文件），将图画出来
 `read.py`用于分析采集文件中的图片的实际样子，是否合理
 testfunction中的其他文件都不成熟，可以不看
 
+##收集数据之后的用途
+
+通过端到端的学习方法，我们利用收集的数据进行了模型训练，使其能够通过 imitation learning完成在carla环境中的自动驾驶，
+代码见  `kadn/myimitation`
